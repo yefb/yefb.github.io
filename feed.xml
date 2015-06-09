@@ -6,35 +6,111 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 08 Jun 2015 19:46:07 -0500</pubDate>
-    <lastBuildDate>Mon, 08 Jun 2015 19:46:07 -0500</lastBuildDate>
+    <pubDate>Mon, 08 Jun 2015 19:48:19 -0500</pubDate>
+    <lastBuildDate>Mon, 08 Jun 2015 19:48:19 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+        <title>Migrando a Vim de manera definitiva - Un mes después</title>
+        <description>&lt;p&gt;Pues realmente, ¿Qué les puedo decir colegas?&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;p&gt;He migrado a Vim hace un mes y medio, como lo mencioné en mi anterior atículo, y si bien he tenido algún que otro altibajo, nada ha sido tan grave como para desistir de mi objetivo.
+He terminado de leer el libro &lt;a href=&quot;http://pragprog.com/book/dnvim/practical-vim&quot;&gt;Practical Vim&lt;/a&gt;, y lo empecé a releer… sí, releer, porque es jodidamente bueno (Gracias &lt;a href=&quot;http://drewneil.com/&quot;&gt;Drew&lt;/a&gt;!).
+El libro me enseñó muchas cosas, entre otras, a pensar como un vimmer, y a entender la famosa frase &lt;a href=&quot;http://stackoverflow.com/a/1220118/1006075&quot;&gt;“Your problem with Vim is that you don’t grok Vi”&lt;/a&gt; (Hablaré de ello en otro artículo). Por favor, si quieren ser vimmers, lean el libro, Drew merece vender miles de copias más y volverse millonario, sin duda.&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p&gt;Un poco de información sobre mi Setup:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;Sigo usando pocos plug-ins, los cuales pueden ver en &lt;a href=&quot;https://github.com/yefb/dotfiles/blob/master/.vimrc&quot;&gt;mi .vimrc&lt;/a&gt;. He agregado algunas cuantas configuraciones a medida que voy detectando las cosas que se me hacen útiles.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/scrooloose/nerdtree&quot;&gt;NERDTree&lt;/a&gt;, aunque es muy bueno, he considerado eliminarlo, pues no lo suelo usar mucho… pero tampoco me estoba :D.&lt;/li&gt;
+  &lt;li&gt;Desactivé las Arrow-Keys, para evitar usarlas en Modo Normal.&lt;/li&gt;
+  &lt;li&gt;Muy en contra de todos los “pronósticos”, y en contra de la mayoría de Vimmers que conozco, prefiero &lt;a href=&quot;https://github.com/wincent/Command-T&quot;&gt;Command-T&lt;/a&gt; sobre &lt;a href=&quot;https://github.com/kien/ctrlp.vim&quot;&gt;Ctrlp.vim&lt;/a&gt;, aunque el último tiene más features, quizás el hecho de que no funcione tan bien en mi PC personal haya afectado (En la oficina y con el mismo &lt;code&gt;.vimrc&lt;/code&gt; funcionaba bien), el caso es que con &lt;strong&gt;Command-T&lt;/strong&gt; estoy bastante satisfecho.
+&lt;code&gt;CommandT&lt;/code&gt;, &lt;code&gt;CommandTBuffer&lt;/code&gt;, &lt;code&gt;CommandTJump&lt;/code&gt;, etc… &lt;a href=&quot;https://github.com/wincent/Command-T/blob/master/doc/command-t.txt&quot;&gt;son joyas&lt;/a&gt;, úsenlas (&lt;code&gt;Ctrlp.vim&lt;/code&gt; &lt;a href=&quot;https://github.com/kien/ctrlp.vim/blob/master/doc/ctrlp.txt&quot;&gt;también tiene sus equivalentes&lt;/a&gt;).&lt;/li&gt;
+  &lt;li&gt;No he querido remapear mi &lt;code&gt;&amp;lt;leader&amp;gt;&lt;/code&gt; key. Muchos suelen cambiar su &lt;code&gt;&amp;lt;leader&amp;gt;&lt;/code&gt; a &lt;code&gt;,&lt;/code&gt;, yo no. El default (Backslash &lt;code&gt;\&lt;/code&gt;) no me parece malo, además la coma (&lt;code&gt;,&lt;/code&gt;) ya tiene un uso en Vim por defecto, del cual suelo sacar provecho.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/garbas/vim-snipmate&quot;&gt;Vim Snipmate&lt;/a&gt; es un muy buen plugin, he empezado a crear &lt;a href=&quot;https://github.com/yefb/dotfiles/tree/master/.vim/snippets&quot;&gt;mis propios Snippets&lt;/a&gt;, al menos los que más usaba en Sublime Text.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://vimdoc.sourceforge.net/htmldoc/version7.html#new-omni-completion&quot;&gt;Omni Completion&lt;/a&gt; en Vim es sencillamente genial cuando te acostumbras a usarlo.&lt;/li&gt;
+  &lt;li&gt;Estoy usando intensivamente los &lt;a href=&quot;http://vimdoc.sourceforge.net/htmldoc/motion.html#object-select&quot;&gt;Vim Text Objects&lt;/a&gt;, es de las cosas que más me ha parecido útil, tanto que en dos días me acostumbré a usarlos en todo caso de uso posibles.&lt;/li&gt;
+  &lt;li&gt;Empecé a practicar mi Touch-Typing, actualmente estoy en un promedio de 48 WPM (Palabras por minuto) y quiero mejorar a mínimo 70 WPM. Para ello, cambié de keyboard Layout a &lt;a href=&quot;http://colemak.com/&quot;&gt;Colemak&lt;/a&gt; (Más sobre eso en otro artículo).&lt;/li&gt;
+  &lt;li&gt;Uso &lt;a href=&quot;http://ethanschoonover.com/solarized&quot;&gt;Solarized&lt;/a&gt;, lo usaba en Sublime Text y en Terminator, lo tengo en Konsole, en Vim, en este blog… me gusta mucho :D.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/bling/vim-airline&quot;&gt;Vim Airline&lt;/a&gt; es de mucha ayuda, brinda información en tiempo real que resulta ser bastante útil, el problema es que torna lento mi Vim, por lo que lo tengo temporalmente desactivado.&lt;/li&gt;
+  &lt;li&gt;¿Vundle, Neobundle o Pathogen? Ya escribiré un artículo sobre ello, pero resumo que me quedo con &lt;a href=&quot;https://github.com/gmarik/vundle&quot;&gt;Vundle&lt;/a&gt; por el momento.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/tpope/vim-unimpaired&quot;&gt;Vim Unimpaired&lt;/a&gt;: ¡Amo esta extensión!&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Y con respecto al uso de Sublime Text, he de decir que lo abro una o dos veces por semana para usar un par de Snippets de SQL que no he querido migrar a Vim aún, ¿pereza o falta de tiempo? Quizás las dos.&lt;/p&gt;
 
+&lt;p&gt;&lt;code&gt;:bd&lt;/code&gt;&lt;/p&gt;
 </description>
-        <pubDate>Sun, 07 Jun 2015 15:14:16 -0500</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2015/06/07/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2015/06/07/welcome-to-jekyll.html</guid>
+        <pubDate>Mon, 11 Nov 2013 21:10:00 -0500</pubDate>
+        <link>http://yourdomain.com/vim,/colemak/2013/11/11/migrando-a-vim-de-manera-definitiva-un-mes-despues.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/vim,/colemak/2013/11/11/migrando-a-vim-de-manera-definitiva-un-mes-despues.html</guid>
         
         
-        <category>jekyll</category>
+        <category>vim,</category>
         
-        <category>update</category>
+        <category>colemak</category>
+        
+      </item>
+    
+      <item>
+        <title>Migrando a Vim de manera definitiva</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/articles/vim_logo_small.png&quot; alt=&quot;Vim Logo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Es un hecho, ya lo decidí, después de tanto tiempo entre sí-no-sí-nunca-sí… al final tuve ese “haz de luz” que me iluminó y me hizo tomar la desición final.&lt;/p&gt;
+
+&lt;p&gt;Tres años llevo intentando migrar a Vim y arrepintiéndome, inicialmente decidí cambiarlo por Geany, luego de Geany me pasé a Sublime Text 2 (y 3) y este pensé que sería mi setup final, no más Editor-Hoping. Pero ok, ya no más, ahora me pasaré a Vim con o sin razones, con o sin excusas, con o sin los conocimientos :D.&lt;/p&gt;
+
+&lt;p&gt;Bromas aparte, hace una semana empecé a usar &lt;strong&gt;Vim&lt;/strong&gt; de manera exclusiva y no me arrepiento, a decir verdad no he extrañado ST para casi nada (mentiría si dijera que para nada). Principalmente porque he ido descubriendo muchas características nativas de &lt;strong&gt;Vim&lt;/strong&gt; que me han servido para reemplazar en cierto modo aquellas cosas que solía usar en ST. Es tanto el compromiso que ahorita mismo estoy escribiendo este artículo en Vim.&lt;/p&gt;
+
+&lt;p&gt;Para llevar a cabo mi macabro plan decidí empezar con algunos hábitos:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Empecé a leer el libro &lt;a href=&quot;http://pragprog.com/book/dnvim/practical-vim&quot;&gt;Practical Vim&lt;/a&gt; y practicar mientras lo leo. Esto de hecho es lo que más les recomiendo, este libro es realmente un increíble recurso.&lt;/li&gt;
+  &lt;li&gt;Tengo un .vimrc con pocas configuraciones “raras” más que quizás lo estrictamente necesario para tener una buena experiencia en el editor. Como eliminar la compatibilidad con vi, por ejemplo.&lt;/li&gt;
+  &lt;li&gt;Similar al punto anterior, tengo muy pocos plugins, más que los necesarios para ciertos casos como &lt;a href=&quot;https://github.com/kien/ctrlp.vim&quot;&gt;CtrlP.vim&lt;/a&gt; y quizás unos 4 más.&lt;/li&gt;
+  &lt;li&gt;Configuré mi bash para &lt;strong&gt;Vi Mode&lt;/strong&gt; (&lt;code&gt;set -o vi&lt;/code&gt;) y así usar los shortcuts de Vim en la consola.&lt;/li&gt;
+  &lt;li&gt;Estoy usando &lt;a href=&quot;https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb&quot;&gt;Vimium&lt;/a&gt; en Chrome y &lt;a href=&quot;https://addons.mozilla.org/es/firefox/addon/vimperator/&quot;&gt;Vimperator&lt;/a&gt; en Firefox para poder usar los shortcuts de Vim en el navegador.&lt;/li&gt;
+  &lt;li&gt;Uso ST para cosas que necesite muy rápido y que por mi falta de experiencia haré muy lento si las hago en Vim.&lt;/li&gt;
+  &lt;li&gt;Uso el Mouse, mis teclas Up-Down-Left-Right mientras me acostumbro a “The Vim Way”, como &lt;a href=&quot;http://yehudakatz.com/2010/07/29/everyone-who-tried-to-convince-me-to-use-vim-was-wrong/&quot;&gt;lo recomienda Yehuda Katz&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Eliminé todo Shortcut que tenía de ST (Como el ítem en favoritos en el Kickoff de KDE) para no abrirlo “por facilidad” o por tentación. En su lugar, ubiqué uno que Gvim (que de hecho no uso pues prefiero vim en el Terminal).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Esas y algunas otras cosas más, ya veremos en algunas semanas el resultado de mi “arrebato” ;).&lt;/p&gt;
+</description>
+        <pubDate>Wed, 16 Oct 2013 19:44:00 -0500</pubDate>
+        <link>http://yourdomain.com/vim/2013/10/16/migrando-a-vim-de-manera-definitiva.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/vim/2013/10/16/migrando-a-vim-de-manera-definitiva.html</guid>
+        
+        
+        <category>vim</category>
+        
+      </item>
+    
+      <item>
+        <title>¡Un nuevo Blog!</title>
+        <description>&lt;p&gt;Pues sí chicos, tal como lo leen.&lt;/p&gt;
+
+&lt;p&gt;Como lo escribí hace algunos días, se venían cambios para el Blog porque decidí tomar &lt;a href=&quot;http://yeinerf.blogspot.com/2013/09/un-nuevo-rumbo.html&quot;&gt;un nuevo Rumbo&lt;/a&gt;.&lt;br /&gt;
+De hecho, en ese artículo comenté sobre la intención de tratar de usar Blogger como plataforma de Blogging y publicar código fuente ahí, pero desafortunadamente Blogger no es para un Dev, así que tuve que cambiar unas cuantas cosas:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;El viejo blog (En Blogger) lo pueden visitar &lt;a href=&quot;http://yeinerf.blogspot.com/&quot; title=&quot;Viejo blog&quot;&gt;acá&lt;/a&gt; quizás por tiempo limitado, ya que creo que no bloguearé más allá y es probable que en el futuro el contenido quede obsoleto y sea mejor borrarlo, ya veremos.&lt;/li&gt;
+  &lt;li&gt;Ahora estoy usando &lt;a href=&quot;http://octopress.org/&quot;&gt;Octopress&lt;/a&gt; y estoy hosteando el sitio en &lt;a href=&quot;http://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt;. Si bien esto es en parte experimental (Puedo cambiar de opinión), por el momento me siento muy a gusto con Octopress (Jekyll) y Github, además no tengo problema en compartir &lt;a href=&quot;http://github.com/yefb/yefb.github.io&quot;&gt;los fuentes del Blog&lt;/a&gt; con ustedes.&lt;/li&gt;
+  &lt;li&gt;Octopress me gusta por varios motivos, entre ellos que está hecho en Ruby y me siento confortable configurando el entorno local, lo he hecho tantas veces que ni recuerdo; lo segundo es que es una herramienta que saca lo mejor de Jekyll, el cual quiero aprender a la perfección; y además, compartir código fuente con Octopress es demasiado fácil y cómodo, supera (A mi parecer) a Wordpress (donde he publicado código sin problemas).&lt;/li&gt;
+  &lt;li&gt;Un nuevo look, más minimalista.&lt;/li&gt;
+  &lt;li&gt;Los comentarios usarán Disqus… sí, ya sé que muchos de ustedes lo odian (yo no), pero a decir verdad, es la alternativa más decente que hay por ahí.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Espero que disfruten del nuevo Blog y espero su feedback!&lt;/p&gt;
+</description>
+        <pubDate>Tue, 10 Sep 2013 16:28:00 -0500</pubDate>
+        <link>http://yourdomain.com/yeinerf/blog/2013/09/10/un-nuevo-blog.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/yeinerf/blog/2013/09/10/un-nuevo-blog.html</guid>
+        
+        
+        <category>yeinerf</category>
+        
+        <category>blog</category>
         
       </item>
     
